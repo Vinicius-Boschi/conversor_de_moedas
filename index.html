@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="page-title">Conversor de moedas</h1>
+        <p class="page-subtitle">(Dados atualizados em 18/03/2022)</p>
+        
+        <div class="money">
+          <p class="name">Valor a ser convertido: </p>
+          <input type="number" id="valor" placeholder="Do dólar para outras moedas">
+        </div>
+
+        <div class="conversion">
+          <p class="name">Converter para: </p>
+            <select id="dropdown">
+              <option value=""></option>
+              <option value="euro">Euro</option>
+              <option value="iene">Iene Japônes</option>
+              <option value="libra">Libra esterlina</option>  
+              <option value="real">Real brasileiro</option>
+            </select>
+        </div>
+
+        <button type="submit" onclick="Conversion()">Converter</button>
+        <h2 id="conversionValue"></h2>
+    </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
